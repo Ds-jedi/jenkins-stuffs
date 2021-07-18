@@ -1,0 +1,18 @@
+LEts say ur project folder looks like this
+
+parent
+├── pom.xml
+├── sub-module
+    ├── pom.xml
+
+U need to add relative path to your parent pom.xml 
+Group ID is your parent folder name
+Artifact ID is your sub module folder name
+
+
+<parent>
+   <groupId> parent </groupId>
+   <artifactId> sub-module </artifactId>
+   <version> 1.0-SNAPSHOT </version>
+   <relativePath> </relativePath>
+</parent>

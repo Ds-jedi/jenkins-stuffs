@@ -1,3 +1,5 @@
+needed when u need to pass some input while building the job
+
 pipeline {
     agent any
     triggers 

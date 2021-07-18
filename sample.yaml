@@ -1,0 +1,18 @@
+---
+- hosts: all
+  become: yes 
+
+  tasks:
+    - name: building docker image
+      command: "docker build -t simple-devops-image ." 
+      args:
+        chdir: /opt/docker
+
+    -  name: creating docker image using docker command
+       command: docker run -d --name simple-devops-container -p 8080:8080 simple-devops-image
+
+
+
+
+From tomcat
+COPY ./webapp.war /usr/local/tomcat/webapps

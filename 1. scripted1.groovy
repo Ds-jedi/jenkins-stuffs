@@ -1,3 +1,5 @@
+/// scripted pipeline in groovy
+
 node
 {
    stage('scm')

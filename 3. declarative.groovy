@@ -1,3 +1,5 @@
+/// declarative pipeline in groovy 
+
 pipeline {
     agent any
     stages 
@@ -18,3 +20,4 @@ pipeline {
         }
     }
 }
+
